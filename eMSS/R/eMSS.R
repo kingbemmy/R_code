@@ -37,8 +37,10 @@ eMSS<-function(p){
   redo_third_2<-ReAnalyse(output,p,re=redo_third_1,3,Floor,Step=3,gene,Ceiling)
   dev.off()
 
+  picture<-paste("All pictures are saved in",paste(getwd(),"/eMSS out",sep = ""))
   return(list("Ceiling"=Ceiling,"Floor"=Floor,"original output"=output,
               "first refinement"=redo_first_1,"second refinement"=redo_second_1,"third refinement"=redo_third_1,
-              "first final"=redo_first_2,"second final"=redo_second_2,"third final"=redo_third_2))
-  cat("All pictures are saved in",paste(getwd(),"/eMSS out/",sep = ""))
+              "first final"=redo_first_2,"second final"=redo_second_2,"third final"=redo_third_2,
+              "message:"=picture))
+
 }
