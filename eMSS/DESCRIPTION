@@ -1,0 +1,13 @@
+Package: eMSS
+Type: Package
+Title: Expanded Maximal Segmental Score
+Version: 0.1.0
+Author: Jia-Jyun Sie(Taiwanese)
+Maintainer: Jia-Jyun Sie <M0522005@ibms.sinica.edu.tw>
+Description: Expanded Maximal Segmental Score.
+Depends: R (>= 3.1.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Packaged: 2020-08-11 02:21:56 UTC; FannLab
