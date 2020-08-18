@@ -86,7 +86,7 @@ OUT<-function(pvalue,Ceiling,Floor,Step,gene,beginning=NA)
       Output[13,1]<-beginning+showMSS$MSSoutput$ndnewin-1
       Output[14,1]<-gene[Output[13,1]]
     }
-    MSS(pvalue,Floor,Step=2)
+    MSS(pvalue,Floor,Step,beginning)
   }
 
   options(scipen=99)

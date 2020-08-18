@@ -8,7 +8,7 @@ Maximal Segmental Score
 Compute maximal segmental score(MSS) and graph
 }
 \usage{
-MSS(permu, Floor, Step = 1, graph = TRUE)
+MSS(permu, Floor, Step = 1, beginning = NA, graph = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -20,6 +20,9 @@ Floor value.
 }
   \item{Step}{
 What is the Step now. Step should be 1,2 or 3
+}
+  \item{beginning}{
+Reanalysis beginning position, will be used in reanalysis. Default is NA.
 }
   \item{graph}{
 graph or not. TRUE or FLASE
