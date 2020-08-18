@@ -2,6 +2,9 @@
 ceiling_floor<-function(pvalue,lpvalue)   #####Calculate upper and lower bounds####
 {
   ceiling<-quantile(sort(pvalue),0.1)
+  if(ceiling==0)ceiling<-quantile(sort(pvalue),0.15)
+  if(ceiling==0)ceiling<-quantile(sort(pvalue),0.20)
+  if(ceiling==0)stop("Too many p-values are 0")
   for(i in 1:length(pvalue)){if(pvalue[i]<ceiling)pvalue[i]<-ceiling}
   f0<-sum(-2*log(pvalue))/length(pvalue)
   floorvalue<-seq(f0,1.25*f0,length=11)

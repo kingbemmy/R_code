@@ -45,6 +45,7 @@ ReAnalyse<-function(output,P,re=NA,order,Ceiling,Floor,Step,gene,lgene=lgene){
   }
 
   if(Step==3){
+    pvalue<-P
     if(order==1){
       redo_first_1<-re
       newx<-pvalue[redo_first_1$Output[2]:redo_first_1$Output[6],]
